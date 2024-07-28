@@ -1,0 +1,39 @@
+.aimee{
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(231, 84, 128);    
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height:50px;
+  width:auto;
+}
+
+.profile-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 30px;
+  padding-left:0;
+}
+
+.header button {
+  margin: 0px;  
+}
+
+.profile-img{
+  height:100px;
+}
+
+.head-profile{
+  height:35px;
+  margin-top:3px;
+  margin-right:3px;
+}
+

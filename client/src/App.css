@@ -1,0 +1,209 @@
+.App {
+  text-align: center;
+  background-color: rgba(255,255,255,0.8);
+  padding: 20px;
+  padding-top:0 ;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 17px;
+  background-image: url('../wallpaper/pink.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; 
+  background-color: #cccccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(243, 103, 98,0.3); 
+  z-index: -1; 
+  pointer-events: none;  
+}
+
+body {
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(126, 60, 60);
+  position: relative;
+  z-index: 2; 
+}
+
+button{
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 15px;
+  color: rgb(126, 60, 60);
+  background-color:  rgba(243, 103, 98,0.3);
+  border-color: wheat;
+  border-radius: 5px;
+  padding:8px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+input{
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: italic;
+  color: rgb(126, 60, 60);
+  font-size: 14px;
+  height:17px;
+  padding: 3px;
+  
+}
+
+.avg-div{
+  background-color: rgba(243, 103, 98,0.3);
+  font-size:17px;
+  padding:5px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  
+}
+
+.avg-p{
+  margin-bottom:5px;
+  margin-top: 5px;
+}
+
+.dash-div{
+  background-color: rgba(231, 176, 174, 0.2);
+  border-radius: 20px;
+  border-color: rgb(223, 191, 202);
+  border-width: 2px;
+  border-style: solid;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left:15px;
+  padding-right: 15px;
+}
+
+.dash-div:hover{
+  cursor: pointer;
+}
+
+.dash-div-title{
+  margin-top:0;
+}
+
+
+.nav-div{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+
+.nav-div >div{
+  margin:10px;
+  width:40%;
+  background-color: rgba(231, 176, 174, 0.2);
+  border-radius: 8%;
+  border-color: rgb(223, 191, 202);
+  border-width: 2px;
+  border-style: solid;
+  height:300px;  
+}
+
+.nav-div-title, .dash-log-div{
+  font-weight:bold;
+  color:rgb(235, 52, 107); 
+}
+
+.nav-div-sub{
+  font-size:15px;
+  color: rgb(126, 60, 60);
+  font-weight:bold;
+
+}
+
+.predict-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; 
+  font-size: 24px;
+}
+
+.predict-title label, .dash-log-div p, .nav-div div {
+  cursor: pointer; 
+}
+
+.predict-title label:nth-child(2) {
+  margin: 0 20px; 
+}
+
+.capsule-container{
+  display:flex;
+  flex-wrap: wrap;
+  gap:10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.capsule{
+  position: relative;
+  height: 30px;
+  background-color: rgb(228, 227, 227);
+  border-radius: 15px;
+  display: flex;
+  align-items:center;
+  padding-left: 0px;
+  margin-bottom: 5px;
+
+}
+
+.sub-capsule {
+  height: 30px;
+  background-color:rgb(235, 168, 166);
+  border-radius: 15px 0 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+.cap-cycle-len{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-right: 5px;
+  font-weight: bold;
+  color: rgb(236, 131, 127);
+
+}
+
+
+
+
